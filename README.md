@@ -9,8 +9,8 @@
 pip install -r requirements.txt
 
 python server.py          # 터미널 1
-python client.py A 호진    # 터미널 2
-python client.py B 친구    # 터미널 3
+python client.py A A    # 터미널 2
+python client.py B B    # 터미널 3
 ```
 
 - 터미널 창 폭은 80칸 이상 권장 (Windows Terminal / VS Code 터미널 추천)
