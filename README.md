@@ -47,9 +47,3 @@ python client.py B 친구    # 터미널 3
 | L2 Data Link | Frame | Ethernet II (14B) + FCS CRC32 (4B) | FCS, dst MAC |
 | L1 Physical | Bits | - | 비트열 전송 애니메이션 |
 
-## 한계 (발표 시 언급)
-
-- 실제 TCP/IP 처리는 OS 커널이 한다. 이 프로그램은 L7~L2 헤더를 직접 만들어 **TCP payload 안에 싣는** 방식으로 시뮬레이션한다.
-- localhost라 실제 IP는 모두 127.0.0.1이며, L3/L2 주소는 `config.py`의 가상 주소다. 포트 번호는 실제 소켓 포트.
-- handshake 애니메이션은 OS가 `connect()`/`accept()`에서 수행한 과정을 재현한 것이다.
-- L6 XOR은 보안 목적이 아닌 표현 계층 시연용이다.
